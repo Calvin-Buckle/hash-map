@@ -1,8 +1,9 @@
 class hashMap{
+    constructor(key,value){
+        this.key = key;
+        this.value = value
+    }
 
-
-
-  
      stringToNumber(string) {
             let hashCode = 0;
           
@@ -13,6 +14,20 @@ class hashMap{
           
             return hashCode;
           }
+
+
+ set(key,value){
+
+ }
+
+get(key){
+
+}
+
+has(key){
+
+}
+
 
 
 

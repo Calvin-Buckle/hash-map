@@ -1,30 +1,26 @@
-class hashMap{
-    constructor(key,value){
-        this.key = key;
-        this.value = value
-    }
 
-     stringToNumber(string) {
-            let hashCode = 0;
-          
-            const primeNumber = 31;
-            for (let i = 0; i < string.length; i++) {
-              hashCode = primeNumber * hashCode + string.charCodeAt(i);
-            }
-          
-            return hashCode;
-          }
+function stringToNumber(string) {
+  let hashCode = 0;
 
+  const primeNumber = 31;
+  for (let i = 0; i < string.length; i++) {
+    hashCode = primeNumber * hashCode + string.charCodeAt(i);
+  }
+  hashCode = hashCode % 16;
 
- set(key,value){
-
- }
-
-get(key){
-
+  return hashCode;
 }
 
-has(key){
+
+
+class HashMap{
+
+table = new Array(16)
+
+
+
+
+
 
 }
 
@@ -34,4 +30,11 @@ has(key){
 
 
 
-}
+
+
+
+
+
+
+
+  
